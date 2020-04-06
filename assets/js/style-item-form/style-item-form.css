@@ -1,0 +1,44 @@
+.style-item-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.style-item-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-item-col > p {
+  margin: 0;
+}
+
+.style-item-col > img {
+  max-width: 80px;
+}
+
+.style-item-form-field {
+  display: grid;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.qtyField {
+  max-width: 64px;
+  text-align: center;
+  display: block;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#style-item-messaging {
+  text-align: center;
+  color: red;
+  font-weight: 700;
+}

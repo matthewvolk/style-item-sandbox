@@ -1,0 +1,29 @@
+.style-item-button-row {
+  margin: 0 auto;
+}
+
+.style-item-link {
+  color: #14498d; 
+  font-weight: 700;
+}
+
+.style-item-link:hover {
+  color: #062246; 
+}
+
+#styleItemAddToCart {
+  grid-column: 5/5;
+  margin: 0;
+  line-height: 0rem;
+  transition: all 0.15s ease;
+  color: #ffffff;
+  background-color: #1f9900;
+  border-color: #1f9900;
+}
+
+#styleItemAddToCart:hover {
+  color: #ffffff;
+  background-color: #156600;
+  border-color: #135c00;
+  background-image: none;
+}

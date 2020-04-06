@@ -1,6 +1,9 @@
 __webpack_public_path__ = window.__webpack_public_path__; // eslint-disable-line
 
 import Global from './theme/global';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import StyleItemForm from './style-item-form/style-item-form.jsx';
 
 const getAccount = () => import('./theme/account');
 const getLogin = () => import('./theme/auth');
@@ -95,4 +98,11 @@ window.stencilBootstrap = function stencilBootstrap(pageType, contextJSON = null
             });
         },
     };
+};
+
+window.initStyleItemForm = function initStyleItemForm(id) {
+    ReactDOM.render(
+        React.createElement(StyleItemForm, id, null),
+        document.querySelector("#style-item-form")
+    );
 };
